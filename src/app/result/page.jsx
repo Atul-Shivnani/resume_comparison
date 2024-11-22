@@ -1,11 +1,12 @@
 "use client";
 
+import { Suspense } from "react";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { AlertCircle, CheckCircle2, XCircle } from "lucide-react";
 import axios from "axios";
 
-export default function ResultPage() {
+function ResultContent() {
   const searchParams = useSearchParams();
   const sample = searchParams.get("sample");
   const uploaded = searchParams.get("uploaded");
@@ -177,5 +178,13 @@ export default function ResultPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ResultPage() {
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center min-h-screen bg-neutral-950">Loading...</div>}>
+      <ResultContent />
+    </Suspense>
   );
 }
