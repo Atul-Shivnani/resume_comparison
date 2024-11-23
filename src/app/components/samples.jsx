@@ -46,7 +46,7 @@ const Samples = () => {
       </span>
 
       <div className="w-full h-full p-1 bg-gradient-to-tl from-blue-500 to-purple-500">
-        <div className="w-full h-full lg:py-5 lg:px-3 p-1 bg-neutral-950 overflow-hidden">
+        <div className="w-full h-full py-5 lg:px-3 px-1 bg-neutral-950 overflow-hidden">
           <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 w-full h-full scrollbar-thin scrollbar-track-transparent scrollbar-thumb-indigo-500 overflow-y-auto">
             {templates.map((template, index) => (
               <div key={index} className="p-5">
