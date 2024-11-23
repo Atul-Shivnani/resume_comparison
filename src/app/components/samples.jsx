@@ -38,15 +38,15 @@ const Samples = () => {
   };
 
   return (
-    <div className="relative snap-center h-full p-2 lg:p-10" id="choose-template">
-      <span className="bg-neutral-950 absolute top-5 lg:top-4 left-16 lg:left-20 p-1">
+    <div className="relative snap-center h-full p-2 lg:p-10 m-2" id="choose-template">
+      <span className="bg-neutral-950 absolute -top-3 lg:top-4 left-4 lg:left-20 p-1">
         <h1 className="lg:text-3xl text-2xl font-bold bg-gradient-to-tl from-blue-500 to-purple-500 bg-clip-text text-transparent">
           Choose Template
         </h1>
       </span>
 
       <div className="w-full h-full p-1 bg-gradient-to-tl from-blue-500 to-purple-500">
-        <div className="w-full h-full py-5 lg:px-3 px-1 bg-neutral-950 overflow-hidden">
+        <div className="w-full h-full lg:py-5 lg:px-3 p-2 bg-neutral-950 overflow-hidden">
           <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 w-full h-full scrollbar-thin scrollbar-track-transparent scrollbar-thumb-indigo-500 overflow-y-auto">
             {templates.map((template, index) => (
               <div key={index} className="p-5">
