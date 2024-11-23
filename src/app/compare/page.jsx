@@ -82,7 +82,7 @@ function CompareContent() {
                 type="file"
                 accept=".pdf,.txt,.docx"
                 onChange={handleFileUpload}
-                className="text-white w-full lg:w-1/2 rounded-md"
+                className="text-white w-full lg:w-1/2 rounded-md p-2"
               />
             ) : uploading ? (
               <p className="lg:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse">

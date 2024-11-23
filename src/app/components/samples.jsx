@@ -39,17 +39,17 @@ const Samples = () => {
 
   return (
     <div className="relative snap-center h-full p-2 lg:p-10 m-1" id="choose-template">
-      <span className="bg-neutral-950 absolute -top-3 lg:top-4 left-4 lg:left-20 p-1">
+      <span className="bg-neutral-950 absolute p-1 -top-1 lg:top-4 left-4 lg:left-20 z-10">
         <h1 className="lg:text-3xl text-xl font-bold bg-gradient-to-tl from-blue-500 to-purple-500 bg-clip-text text-transparent">
           Choose Template
         </h1>
       </span>
 
       <div className="w-full h-full p-1 bg-gradient-to-tl from-blue-500 to-purple-500">
-        <div className="w-full h-full lg:py-5 lg:px-3 p-2 bg-neutral-950 overflow-hidden">
+        <div className="w-full h-full py-5 lg:px-3 p-2 bg-neutral-950 overflow-hidden">
           <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 w-full h-full scrollbar-thin scrollbar-track-transparent scrollbar-thumb-indigo-500 overflow-y-auto">
             {templates.map((template, index) => (
-              <div key={index} className="lg:p-5 p-3">
+              <div key={index} className="lg:p-5 p-2">
                 <div className="relative group bg-neutral-400">
                   <img
                     src={`https://resume-comparsion.s3.eu-north-1.amazonaws.com/public/${template.folder}/preview.webp`}
