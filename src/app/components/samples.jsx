@@ -38,9 +38,9 @@ const Samples = () => {
   };
 
   return (
-    <div className="relative snap-center h-full p-2 lg:p-10 m-2" id="choose-template">
+    <div className="relative snap-center h-full p-2 lg:p-10 m-1" id="choose-template">
       <span className="bg-neutral-950 absolute -top-3 lg:top-4 left-4 lg:left-20 p-1">
-        <h1 className="lg:text-3xl text-2xl font-bold bg-gradient-to-tl from-blue-500 to-purple-500 bg-clip-text text-transparent">
+        <h1 className="lg:text-3xl text-xl font-bold bg-gradient-to-tl from-blue-500 to-purple-500 bg-clip-text text-transparent">
           Choose Template
         </h1>
       </span>
@@ -49,7 +49,7 @@ const Samples = () => {
         <div className="w-full h-full lg:py-5 lg:px-3 p-2 bg-neutral-950 overflow-hidden">
           <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 w-full h-full scrollbar-thin scrollbar-track-transparent scrollbar-thumb-indigo-500 overflow-y-auto">
             {templates.map((template, index) => (
-              <div key={index} className="p-5">
+              <div key={index} className="lg:p-5 p-3">
                 <div className="relative group bg-neutral-400">
                   <img
                     src={`https://resume-comparsion.s3.eu-north-1.amazonaws.com/public/${template.folder}/preview.webp`}
@@ -59,13 +59,13 @@ const Samples = () => {
                   <div className="lg:absolute bottom-0 w-full bg-neutral-500 bg-opacity-0 group-hover:bg-opacity-40 flex gap-2 justify-around p-1 lg:p-5">
                     <button
                       onClick={() => handleView(template)}
-                      className="bg-gradient-to-l from-blue-500 to-purple-500 rounded-full lg:text-lg p-1 lg:p-2 text-white hover:scale-105 duration-200 lg:w-2/5 lg:hidden group-hover:block"
+                      className="text-md bg-gradient-to-l from-blue-500 to-purple-500 rounded-full lg:text-lg p-1 lg:p-2 text-white hover:scale-105 duration-200 lg:w-2/5 lg:hidden group-hover:block"
                     >
                       View
                     </button>
                     <button
                       onClick={() => handleSelect(template)}
-                      className="bg-gradient-to-l from-blue-500 to-purple-500 rounded-full lg:text-lg p-1 lg:p-2 text-white hover:scale-105 duration-200 lg:w-2/5 lg:hidden group-hover:block"
+                      className="text-md bg-gradient-to-l from-blue-500 to-purple-500 rounded-full lg:text-lg p-1 lg:p-2 text-white hover:scale-105 duration-200 lg:w-2/5 lg:hidden group-hover:block"
                     >
                       Select
                     </button>
