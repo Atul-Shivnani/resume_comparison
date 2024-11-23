@@ -57,8 +57,8 @@ function CompareContent() {
   }
 
   return (
-    <div className="h-dvh snap-y snap-mandatory overflow-auto bg-neutral-950 scrollbar-none p-10">
-      <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-5 h-full">
+    <div className="h-dvh snap-y snap-mandatory overflow-auto bg-neutral-950 scrollbar-none lg:p-10 p-1">
+      <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-2 lg:gap-5 h-full">
         <div className="w-full h-5/6">
           <h2 className="lg:text-lg font-semibold text-white mb-2">
             Sample Document
