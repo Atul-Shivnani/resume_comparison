@@ -12,7 +12,7 @@ const s3 = new S3Client({
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
   },
 });
-console.log(process.env.CONVERT_API_KEY)
+
 const convertapi = new ConvertApi(process.env.CONVERT_API_KEY);
 
 export default async function convertAndUpload(file, sampleUrl) {
