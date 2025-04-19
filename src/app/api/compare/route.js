@@ -93,14 +93,8 @@ async function compareDocumentsWithMistral(sampleText, uploadedText) {
       throw new Error('Invalid API response structure');
     }
 
-    // Log the raw response content
-    console.log("Raw API response content:", response.data.choices[0].message.content);
-
     // Parse the response
     const result = parseJsonSafely(response.data.choices[0].message.content);
-
-    // Log the parsed result
-    console.log("Parsed result:", result);
 
     // Normalize the response structure
     const normalizedResult = {
